@@ -1,10 +1,21 @@
-@media (max-width: 1199px) {
-
+@media (max-width: 3000px) {
+    .tns-nav {
+        display: none;
+    }
 }
 
 
 
+@media (max-width: 1080px) {
+    .prev, .next {
+        display: none;
+    }
 
+.tns-nav {
+    display: block;
+}
+
+}
 
 
 
@@ -48,8 +59,16 @@
         margin: 0 10px;
     }
 }
+.tns-item {
+    img {
+        width: 100%;
+    }
+    
 }
-
+.prev, .next {
+    display: none;
+}
+}
 
 
 
