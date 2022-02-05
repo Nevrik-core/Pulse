@@ -1,0 +1,45 @@
+.feedback {
+    min-height: 950px;
+    padding-bottom: 70px;
+    &__item {
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+        img {
+            width: 169px;
+            height: 169px;
+        }
+    }
+    &__review {
+        margin-top: 70px;
+        hr {
+            margin-top: 50px;
+            background-color: #f6f6f6;
+        }
+    }
+    &__text {
+        margin-left: 60px;
+    }
+    &__name {
+        font-size: 18px;
+        font-weight: 900;
+    }
+    &__subtitle {
+        font-size: 14px;
+        color: #646464;
+        font-weight: 300;
+        margin-top: 4px;
+    }
+    &__descr {
+        width: 660px;
+        margin-top: 19px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #0d0d0d;
+        text-align: left;
+        line-height: normal;
+        letter-spacing: normal;
+        font-stretch: normal;
+        font-style: normal;
+    }
+}
