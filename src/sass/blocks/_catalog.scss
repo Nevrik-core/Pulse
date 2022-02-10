@@ -146,6 +146,11 @@
                 transform: translateX(-100%);
                 margin-left: 0px;
             }
+            ul {
+                padding-left: 0;
+                list-style: none;
+            }
+            
             li {
                 position: relative;
                 color: #555555;

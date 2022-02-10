@@ -25,5 +25,8 @@
     "url": "https://github.com/Nevrik-core/Pulse/issues"
   },
   "homepage": "https://github.com/Nevrik-core/Pulse#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
 }

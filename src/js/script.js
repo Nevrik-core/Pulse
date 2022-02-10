@@ -84,4 +84,38 @@ const slider = tns({
     // Mask
 
     $('input[name=phone]').mask("+7 (999) 999-99-99");
+
+    // Mailer
+
+    $('form').submit(function(e) {
+        e.preventDefault();
+
+        if(!$(this).valid()) {
+            return;
+        };
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+            $('#consultation, #order').fadeOut();
+            $('overlay, #thanks').fadeIn('fast');
+            $('form').trigger('reset');
+        });
+        return false;
+    });
+
+    // Pageup
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1300) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    new WOW().init();
+
 });
